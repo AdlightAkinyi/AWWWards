@@ -79,14 +79,14 @@ def search_results(request):
         message = "You haven't searched for any term"
         return render(request, 'search.html',{"message":message})
 
-# class PostList(APIView):
-#     def get(self, request, format=None):
-#         all_post = Post.objects.all()
-#         serializers = PostSerializer(all_post, many=True)
-#         return Response(serializers.data)
+class PostList(APIView):
+    def get(self, request, format=None):
+        all_post = Post.objects.all()
+        serializers = PostSerializer(all_post, many=True)
+        return Response(serializers.data)
 
-# class ProfileList(APIView):
-#     def get(self, request, format=None):
-#         all_profile = Post.objects.all()
-#         serializers = PostSerializer(all_profile, many=True)
-#         return Response(serializers.data) 
+class ProfileList(APIView):
+    def get(self, request, format=None):
+        all_profile = Post.objects.all()
+        serializers = PostSerializer(all_profile, many=True)
+        return Response(serializers.data) 
