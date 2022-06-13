@@ -26,7 +26,8 @@ git clone https://github.com/AdlightAkinyi/Awards.git
 
 cd Awards
 
-Create virtual environment  python3 -m venv virtual
+Create virtual environment  
+python3 -m venv virtual
 
 Activate virtual environment source virtual/bin/activate
 
