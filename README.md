@@ -18,4 +18,8 @@ Rate/ review other users' projects
 Search for projects 
 
 View projects overall score
+
 View my profile page.
+
+# Set-up/Installation requirements
+git clone https://github.com/AdlightAkinyi/Awards.git
