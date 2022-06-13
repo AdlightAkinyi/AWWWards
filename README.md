@@ -29,12 +29,14 @@ cd Awards
 Create virtual environment  
 python3 -m venv virtual
 
-Activate virtual environment source virtual/bin/activate
+Activate virtual environment 
+source virtual/bin/activate
 
-Install all dependencies  pip install -r requirements.txt
+Install all dependencies 
+ pip install -r requirements.txt
 
-Running migrations
-python3 manage.py runmigrations
+make migrations
+python3 manage.py makemigrations
 
 python3 manage.py migrate
 
