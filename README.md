@@ -36,3 +36,13 @@ Running migrations
 python3 manage.py runmigrations
 
 python3 manage.py migrate
+
+# Running the app 
+python3 manage.py runserver
+
+# Technologies used 
+Django
+
+python3
+
+Bootstrap
