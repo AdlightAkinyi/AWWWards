@@ -24,21 +24,17 @@ View my profile page.
 # Set-up/Installation requirements
 git clone   https://github.com/AdlightAkinyi/aWWWards.git
 
-cd Awards
+cd Award
 
-Create virtual environment  
 python3 -m venv virtual
 
-Activate virtual environment 
-  *source virtual/bin/activate
+source virtual/bin/activate
 
-Install all dependencies 
-  *pip install -r requirements.txt
+pip install -r requirements
 
-make migrations
- *python3 manage.py makemigrations
+python3 manage.py makemigrations
 
- *python3 manage.py migrate
+python3 manage.py migrate
 
 # Running the app 
 python3 manage.py runserver
