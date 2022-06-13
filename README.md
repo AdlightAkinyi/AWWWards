@@ -24,7 +24,7 @@ View my profile page.
 # Set-up/Installation requirements
 git clone   https://github.com/AdlightAkinyi/aWWWards.git
 
-cd Award
+cd aWWWards
 
 python3 -m venv virtual
 
@@ -50,3 +50,12 @@ Bootstrap
 
 # Support&Contact details
 adlightakinyi1@gmail.com
+
+# Licence 
+AdlightAkinyi/aWWWards is licensed under the
+
+MIT License
+
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+Copyright (c) 2022 Adlight  Akinyi
