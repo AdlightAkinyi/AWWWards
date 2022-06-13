@@ -5,3 +5,6 @@ This is an application that allows a user to post a project he/she has created a
 
 # Author
 Adlight Akinyi
+
+# User story
+As a user, you can:
