@@ -35,7 +35,8 @@ ALLOWED_HOSTS=[]
 # Application definition
 
 INSTALLED_APPS = [
-    'awardsproject.apps.awardsprojectconfig',
+    # 'awardsproject.apps.awardsprojectconfig',
+    'awardsproject',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'rest_framework',
     'star_ratings',
+    'registration',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +89,10 @@ WSGI_APPLICATION = 'awardsapp.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
+
+MODE=config("MODE", default="dev")
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
 if config('MODE')=="dev":
    DATABASES = {
        'default': {

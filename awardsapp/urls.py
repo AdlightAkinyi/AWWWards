@@ -14,17 +14,25 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.conf.urls import url,include
+# from django.conf.urls import url,include
+from django.urls import include, re_path as url
 from django.contrib import admin
 # from django.urls import path
 from django.contrib.auth import views
-
+# from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^',include('awwardsapp.urls')),
+    # url(r'^admin/', admin.site.urls),
+    # url(r'^',include('awardsproject.urls')),
+    # # url(r'^accounts/', include('registration.backends.simple.urls')),
+    # # url(r'^logout/$', views.logout, {"next_page":'/'}),
+    # #  url(r'^accounts/', include('registration.backends.simple.urls')),
+    # url('logout/', auth_views.LogoutView.as_view(next_page = '/')),
+    # url(r'^ratings/', include('star_ratings.urls', namespace='ratings', app_name='ratings')),
+ url(r'^admin/', admin.site.urls),
+    url(r'',include('awardsproject.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^logout/$', views.logout, {"next_page":'/'}),
-    url(r'^ratings/', include('star_ratings.urls', namespace='ratings', app_name='ratings')),
-
+    # url('logout/', auth_views.LogoutView.as_view(next_page = '/')),
+    url(r'^logout/$', views.logout,{"next_page":'/'}),
+    url(r'^ratings/', include('star_ratings.urls', namespace='ratings')),
 ]
