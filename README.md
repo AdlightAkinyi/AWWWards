@@ -23,3 +23,5 @@ View my profile page.
 
 # Set-up/Installation requirements
 git clone https://github.com/AdlightAkinyi/Awards.git
+
+cd Awards
