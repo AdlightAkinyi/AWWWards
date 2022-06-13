@@ -1,4 +1,4 @@
-# Awards
+# aWWWards
 
 # Description
 This is an application that allows a user to post a project he/she has created and get it reviewed by his/her peers.
@@ -22,7 +22,7 @@ View projects overall score
 View my profile page.
 
 # Set-up/Installation requirements
-git clone https://github.com/AdlightAkinyi/Awards.git
+git clone   https://github.com/AdlightAkinyi/aWWWards.git
 
 cd Awards
 
@@ -30,15 +30,15 @@ Create virtual environment
 python3 -m venv virtual
 
 Activate virtual environment 
-source virtual/bin/activate
+  *source virtual/bin/activate
 
 Install all dependencies 
- pip install -r requirements.txt
+  *pip install -r requirements.txt
 
 make migrations
-python3 manage.py makemigrations
+ *python3 manage.py makemigrations
 
-python3 manage.py migrate
+ *python3 manage.py migrate
 
 # Running the app 
 python3 manage.py runserver
