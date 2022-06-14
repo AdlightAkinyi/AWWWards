@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 from django.urls import path
 from django.contrib.auth import views
 from django.contrib.auth.views import LogoutView
+from django_registration.backends.one_step.views import RegistrationView
 
 
 urlpatterns = [
@@ -34,10 +35,11 @@ urlpatterns = [
     # url(r'^ratings/', include('star_ratings.urls', namespace='ratings', app_name='ratings')),
     path('admin/', admin.site.urls),
     path('',include('awardsproject.urls')),
-    path('accounts/', include('registration.backends.simple.urls')),
+    path('accounts/', include('django_registration.backends.one_step.urls')),
+    path('ratings/', include('star_ratings.urls', namespace='ratings')),
     # url('logout/', auth_views.LogoutView.as_view(next_page = '/')),
     # url(r'^logout/$', views.logout,{"next_page":'/'}),
-    path('ratings/', include('star_ratings.urls', namespace='ratings')),
+  
 ]
 
 if settings.DEBUG: 
