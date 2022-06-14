@@ -35,7 +35,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'',include('awardsproject.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    # url('logout/', auth_views.LogoutView.as_view(next_page = '/')),
+    url('logout/', auth_views.LogoutView.as_view(next_page = '/')),
     # url(r'^logout/$', views.logout,{"next_page":'/'}),
     url(r'^ratings/', include('star_ratings.urls', namespace='ratings')),
 ]
