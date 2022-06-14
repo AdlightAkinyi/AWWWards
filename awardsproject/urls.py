@@ -14,5 +14,6 @@ urlpatterns=[
     url(r'^api/post/$', views.PostList.as_view()),
     url(r'^api/profile/$', views.ProfileList.as_view()),
 ]
-if settings.DEBUG:
+if settings.DEBUG: 
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
