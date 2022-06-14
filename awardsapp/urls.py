@@ -15,11 +15,10 @@ Including another URLconf
 """
 
 # from django.conf.urls import url
-from django.urls import include, re_path as url
+from django.urls import include, path 
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path
 from django.contrib.auth import views
 from django.contrib.auth.views import LogoutView
 from django_registration.backends.one_step.views import RegistrationView
