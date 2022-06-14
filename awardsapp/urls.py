@@ -21,8 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 # from django.urls import path
 from django.contrib.auth import views
-
-
+from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
    
@@ -35,7 +34,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'',include('awardsproject.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^logout/$', views.logout,{"next_page":'/'}),
+    # url('logout/', auth_views.LogoutView.as_view(next_page = '/')),
+    # url(r'^logout/$', views.logout,{"next_page":'/'}),
     url(r'^ratings/', include('star_ratings.urls', namespace='ratings')),
 ]
 
