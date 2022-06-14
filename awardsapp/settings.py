@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'rest_framework',
     'star_ratings',
-    'registration',
+   
 ]
 
 MIDDLEWARE = [
@@ -90,6 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'photos',
         'USER':'aakinyi',
+        'Host':'127.0.0.1',
         'PASSWORD':'Adlight@2022'
     }
 }
